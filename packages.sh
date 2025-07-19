@@ -108,7 +108,7 @@ packages=(
     starship
     
     # Notifications
-    swaynotificationcenter
+    swaync
 
     # Wallpaper
     swaybg
