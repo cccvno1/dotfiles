@@ -1,0 +1,56 @@
+[Default Applications]
+# Web browsers
+text/html=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/xml=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/ftp=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+
+# File manager
+inode/directory=yazi.desktop
+
+# Text files
+text/plain=nvim.desktop
+text/x-readme=nvim.desktop
+text/x-authors=nvim.desktop
+text/x-changelog=nvim.desktop
+text/x-copying=nvim.desktop
+text/x-credits=nvim.desktop
+text/x-install=nvim.desktop
+text/x-log=nvim.desktop
+application/x-shellscript=nvim.desktop
+
+# Images
+image/jpeg=imv.desktop
+image/jpg=imv.desktop
+image/png=imv.desktop
+image/gif=imv.desktop
+image/webp=imv.desktop
+image/tiff=imv.desktop
+image/x-tiff=imv.desktop
+image/svg+xml=imv.desktop
+image/bmp=imv.desktop
+
+# PDF
+application/pdf=org.pwmt.zathura.desktop
+
+# Archives
+application/zip=org.gnome.FileRoller.desktop
+application/x-tar=org.gnome.FileRoller.desktop
+application/x-gzip=org.gnome.FileRoller.desktop
+application/x-bzip2=org.gnome.FileRoller.desktop
+application/x-7z-compressed=org.gnome.FileRoller.desktop
+application/x-rar=org.gnome.FileRoller.desktop
+
+[Added Associations]
+inode/directory=yazi.desktop;
+text/html=firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;

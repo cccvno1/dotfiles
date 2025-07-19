@@ -1,0 +1,188 @@
+/* Gruvbox Dark theme for GTK4 */
+
+/* Define Gruvbox colors */
+@define-color accent_color #d79921;
+@define-color accent_bg_color #d79921;
+@define-color accent_fg_color #282828;
+@define-color destructive_color #fb4934;
+@define-color destructive_bg_color #fb4934;
+@define-color destructive_fg_color #282828;
+@define-color success_color #b8bb26;
+@define-color success_bg_color #b8bb26;
+@define-color success_fg_color #282828;
+@define-color warning_color #fabd2f;
+@define-color warning_bg_color #fabd2f;
+@define-color warning_fg_color #282828;
+@define-color error_color #fb4934;
+@define-color error_bg_color #fb4934;
+@define-color error_fg_color #282828;
+@define-color window_bg_color #282828;
+@define-color window_fg_color #ebdbb2;
+@define-color view_bg_color #32302f;
+@define-color view_fg_color #ebdbb2;
+@define-color headerbar_bg_color #3c3836;
+@define-color headerbar_fg_color #ebdbb2;
+@define-color headerbar_border_color #504945;
+@define-color popover_bg_color #3c3836;
+@define-color popover_fg_color #ebdbb2;
+@define-color card_bg_color #3c3836;
+@define-color card_fg_color #ebdbb2;
+@define-color dialog_bg_color #282828;
+@define-color dialog_fg_color #ebdbb2;
+@define-color thumbnail_bg_color #3c3836;
+@define-color thumbnail_fg_color #ebdbb2;
+@define-color sidebar_bg_color #32302f;
+@define-color sidebar_fg_color #ebdbb2;
+
+/* Window styling */
+window {
+    background-color: @window_bg_color;
+    color: @window_fg_color;
+}
+
+/* Headerbar styling */
+headerbar {
+    background: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+    border-bottom: 1px solid @headerbar_border_color;
+}
+
+/* Button styling */
+button {
+    background: alpha(@window_fg_color, 0.1);
+    border: 1px solid alpha(@window_fg_color, 0.2);
+    border-radius: 6px;
+    color: @window_fg_color;
+}
+
+button:hover {
+    background: alpha(@accent_color, 0.3);
+    border-color: @accent_color;
+}
+
+button.suggested-action {
+    background: @accent_bg_color;
+    color: @accent_fg_color;
+    border-color: @accent_bg_color;
+}
+
+button.destructive-action {
+    background: @destructive_bg_color;
+    color: @destructive_fg_color;
+    border-color: @destructive_bg_color;
+}
+
+/* Entry styling */
+entry {
+    background: @view_bg_color;
+    border: 1px solid alpha(@window_fg_color, 0.3);
+    border-radius: 6px;
+    color: @view_fg_color;
+}
+
+entry:focus {
+    border-color: @accent_color;
+    box-shadow: inset 0 0 0 1px @accent_color;
+}
+
+/* Treeview styling */
+columnview,
+listview {
+    background: @view_bg_color;
+    color: @view_fg_color;
+}
+
+columnview row:selected,
+listview row:selected {
+    background: @accent_bg_color;
+    color: @accent_fg_color;
+}
+
+/* Navigation */
+.navigation-sidebar {
+    background: @sidebar_bg_color;
+    color: @sidebar_fg_color;
+}
+
+.navigation-sidebar row:selected {
+    background: @accent_bg_color;
+    color: @accent_fg_color;
+}
+
+/* Cards */
+.card {
+    background: @card_bg_color;
+    color: @card_fg_color;
+    border: 1px solid alpha(@window_fg_color, 0.2);
+    border-radius: 8px;
+}
+
+/* Popovers */
+popover {
+    background: @popover_bg_color;
+    color: @popover_fg_color;
+    border: 1px solid alpha(@window_fg_color, 0.3);
+    border-radius: 8px;
+}
+
+/* Switch */
+switch {
+    background: alpha(@window_fg_color, 0.3);
+    border-radius: 14px;
+}
+
+switch:checked {
+    background: @accent_bg_color;
+}
+
+/* Scale */
+scale trough {
+    background: alpha(@window_fg_color, 0.3);
+    border-radius: 6px;
+}
+
+scale highlight {
+    background: @accent_bg_color;
+    border-radius: 6px;
+}
+
+/* Scrollbar */
+scrollbar {
+    background: transparent;
+}
+
+scrollbar slider {
+    background: alpha(@window_fg_color, 0.5);
+    border-radius: 6px;
+    margin: 2px;
+}
+
+scrollbar slider:hover {
+    background: alpha(@window_fg_color, 0.7);
+}
+
+/* Progress bar */
+progressbar trough {
+    background: alpha(@window_fg_color, 0.3);
+    border-radius: 6px;
+}
+
+progressbar progress {
+    background: @accent_bg_color;
+    border-radius: 6px;
+}
+
+/* Check and radio buttons */
+checkbutton check,
+radiobutton radio {
+    background: @view_bg_color;
+    border: 1px solid alpha(@window_fg_color, 0.5);
+    color: @view_fg_color;
+}
+
+checkbutton check:checked,
+radiobutton radio:checked {
+    background: @accent_bg_color;
+    border-color: @accent_bg_color;
+    color: @accent_fg_color;
+}

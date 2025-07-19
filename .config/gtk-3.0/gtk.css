@@ -1,0 +1,290 @@
+/* Gruvbox Dark theme for GTK3 */
+
+/* Import base theme */
+@import url("resource:///org/gtk/libgtk/theme/Adwaita/gtk-contained-dark.css");
+
+/* Define Gruvbox colors */
+@define-color gruvbox_bg #282828;
+@define-color gruvbox_bg_soft #32302f;
+@define-color gruvbox_bg_hard #1d2021;
+@define-color gruvbox_fg #ebdbb2;
+@define-color gruvbox_fg_dim #a89984;
+@define-color gruvbox_red #fb4934;
+@define-color gruvbox_green #b8bb26;
+@define-color gruvbox_yellow #fabd2f;
+@define-color gruvbox_blue #83a598;
+@define-color gruvbox_purple #d3869b;
+@define-color gruvbox_aqua #8ec07c;
+@define-color gruvbox_orange #fe8019;
+@define-color gruvbox_gray #928374;
+
+/* Override base colors */
+@define-color bg_color @gruvbox_bg;
+@define-color fg_color @gruvbox_fg;
+@define-color base_color @gruvbox_bg_soft;
+@define-color text_color @gruvbox_fg;
+@define-color selected_bg_color @gruvbox_yellow;
+@define-color selected_fg_color @gruvbox_bg;
+@define-color tooltip_bg_color @gruvbox_bg_hard;
+@define-color tooltip_fg_color @gruvbox_fg;
+@define-color theme_bg_color @gruvbox_bg;
+@define-color theme_fg_color @gruvbox_fg;
+@define-color theme_base_color @gruvbox_bg_soft;
+@define-color theme_text_color @gruvbox_fg;
+@define-color theme_selected_bg_color @gruvbox_yellow;
+@define-color theme_selected_fg_color @gruvbox_bg;
+
+/* Window */
+window {
+    background-color: @gruvbox_bg;
+    color: @gruvbox_fg;
+}
+
+/* Headerbar */
+headerbar {
+    background: linear-gradient(to bottom, @gruvbox_bg_soft, @gruvbox_bg);
+    border-bottom: 1px solid @gruvbox_gray;
+    color: @gruvbox_fg;
+}
+
+headerbar button {
+    background: transparent;
+    border: 1px solid transparent;
+    color: @gruvbox_fg;
+    border-radius: 6px;
+}
+
+headerbar button:hover {
+    background: @gruvbox_bg_hard;
+    border-color: @gruvbox_gray;
+}
+
+headerbar button:active {
+    background: @gruvbox_yellow;
+    color: @gruvbox_bg;
+}
+
+/* Buttons */
+button {
+    background: @gruvbox_bg_soft;
+    border: 1px solid @gruvbox_gray;
+    color: @gruvbox_fg;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+button:hover {
+    background: @gruvbox_gray;
+    border-color: @gruvbox_fg_dim;
+}
+
+button:active {
+    background: @gruvbox_yellow;
+    color: @gruvbox_bg;
+}
+
+button.suggested-action {
+    background: @gruvbox_blue;
+    color: @gruvbox_bg;
+    border-color: @gruvbox_blue;
+}
+
+button.suggested-action:hover {
+    background: shade(@gruvbox_blue, 1.2);
+}
+
+button.destructive-action {
+    background: @gruvbox_red;
+    color: @gruvbox_bg;
+    border-color: @gruvbox_red;
+}
+
+button.destructive-action:hover {
+    background: shade(@gruvbox_red, 1.2);
+}
+
+/* Entry fields */
+entry {
+    background: @gruvbox_bg_hard;
+    border: 1px solid @gruvbox_gray;
+    color: @gruvbox_fg;
+    border-radius: 6px;
+}
+
+entry:focus {
+    border-color: @gruvbox_yellow;
+    box-shadow: 0 0 0 1px @gruvbox_yellow;
+}
+
+/* Notebook tabs */
+notebook tab {
+    background: @gruvbox_bg_soft;
+    border: 1px solid @gruvbox_gray;
+    color: @gruvbox_fg_dim;
+    padding: 8px 16px;
+}
+
+notebook tab:checked {
+    background: @gruvbox_bg;
+    color: @gruvbox_yellow;
+    border-bottom-color: @gruvbox_yellow;
+}
+
+/* Menu */
+menu {
+    background: @gruvbox_bg_soft;
+    border: 1px solid @gruvbox_gray;
+    border-radius: 6px;
+}
+
+menuitem {
+    color: @gruvbox_fg;
+    padding: 6px 12px;
+}
+
+menuitem:hover {
+    background: @gruvbox_yellow;
+    color: @gruvbox_bg;
+}
+
+/* Treeview */
+treeview {
+    background: @gruvbox_bg;
+    color: @gruvbox_fg;
+}
+
+treeview:selected {
+    background: @gruvbox_yellow;
+    color: @gruvbox_bg;
+}
+
+treeview header button {
+    background: @gruvbox_bg_soft;
+    border: 1px solid @gruvbox_gray;
+    color: @gruvbox_fg;
+}
+
+/* Scrollbar */
+scrollbar {
+    background: @gruvbox_bg_soft;
+}
+
+scrollbar slider {
+    background: @gruvbox_gray;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+scrollbar slider:hover {
+    background: @gruvbox_fg_dim;
+}
+
+/* Progressbar */
+progressbar {
+    background: @gruvbox_bg_soft;
+    border-radius: 10px;
+}
+
+progressbar progress {
+    background: @gruvbox_yellow;
+    border-radius: 10px;
+}
+
+/* Switch */
+switch {
+    background: @gruvbox_bg_soft;
+    border: 1px solid @gruvbox_gray;
+    border-radius: 14px;
+}
+
+switch:checked {
+    background: @gruvbox_yellow;
+}
+
+switch slider {
+    background: @gruvbox_fg;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+/* Scale */
+scale trough {
+    background: @gruvbox_bg_soft;
+    border-radius: 10px;
+}
+
+scale highlight {
+    background: @gruvbox_yellow;
+    border-radius: 10px;
+}
+
+scale slider {
+    background: @gruvbox_fg;
+    border: 2px solid @gruvbox_yellow;
+    border-radius: 50%;
+    margin: -2px;
+}
+
+/* Tooltip */
+tooltip {
+    background: @gruvbox_bg_hard;
+    color: @gruvbox_fg;
+    border: 1px solid @gruvbox_gray;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+
+/* Popover */
+popover {
+    background: @gruvbox_bg_soft;
+    border: 1px solid @gruvbox_gray;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar */
+sidebar {
+    background: @gruvbox_bg_soft;
+    border-right: 1px solid @gruvbox_gray;
+}
+
+sidebar row {
+    color: @gruvbox_fg;
+    padding: 8px 12px;
+}
+
+sidebar row:selected {
+    background: @gruvbox_yellow;
+    color: @gruvbox_bg;
+}
+
+/* Check and radio buttons */
+checkbutton check,
+radiobutton radio {
+    background: @gruvbox_bg_soft;
+    border: 1px solid @gruvbox_gray;
+    color: @gruvbox_fg;
+}
+
+checkbutton check:checked,
+radiobutton radio:checked {
+    background: @gruvbox_yellow;
+    color: @gruvbox_bg;
+    border-color: @gruvbox_yellow;
+}
+
+/* Combobox */
+combobox button {
+    background: @gruvbox_bg_soft;
+    border: 1px solid @gruvbox_gray;
+    color: @gruvbox_fg;
+}
+
+combobox button:hover {
+    background: @gruvbox_gray;
+}
+
+/* Spinner */
+spinner {
+    color: @gruvbox_yellow;
+}

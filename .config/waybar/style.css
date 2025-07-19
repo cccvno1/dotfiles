@@ -1,0 +1,167 @@
+/* Gruvbox Dark Colors */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "MapleMonoNF CN";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(40, 40, 40, 0.9);
+    border-radius: 10px;
+    color: #ebdbb2;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/* Workspaces */
+#workspaces {
+    background-color: transparent;
+    margin: 0 4px;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #a89984;
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+#workspaces button:hover {
+    background-color: #504945;
+    color: #ebdbb2;
+}
+
+#workspaces button.active {
+    background-color: #d79921;
+    color: #282828;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background-color: #fb4934;
+    color: #282828;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #cc241d;
+    }
+}
+
+/* Window title */
+#window {
+    background-color: transparent;
+    padding: 0 12px;
+    color: #a89984;
+    font-style: italic;
+}
+
+/* Clock */
+#clock {
+    background-color: #458588;
+    color: #282828;
+    padding: 0 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#clock:hover {
+    background-color: #83a598;
+}
+
+/* System modules */
+#cpu {
+    background-color: #689d6a;
+    color: #282828;
+    padding: 0 12px;
+    border-radius: 6px;
+    margin-right: 4px;
+}
+
+#cpu:hover {
+    background-color: #8ec07c;
+}
+
+#memory {
+    background-color: #d79921;
+    color: #282828;
+    padding: 0 12px;
+    border-radius: 6px;
+    margin-right: 4px;
+}
+
+#memory:hover {
+    background-color: #fabd2f;
+}
+
+/* System tray */
+#tray {
+    background-color: transparent;
+    padding: 0 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #fb4934;
+    border-radius: 6px;
+}
+
+/* Notification */
+#custom-notification {
+    background-color: #b16286;
+    color: #282828;
+    padding: 0 12px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#custom-notification:hover {
+    background-color: #d3869b;
+}
+
+/* Critical battery warning */
+.critical {
+    background-color: #fb4934;
+    color: #282828;
+    animation: blink 0.5s linear infinite alternate;
+}
+
+/* Warning states */
+.warning {
+    background-color: #fabd2f;
+    color: #282828;
+}
+
+/* Module spacing */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #custom-notification {
+    margin-right: 0;
+}
+
+/* Tooltip styling */
+tooltip {
+    background-color: #3c3836;
+    border: 1px solid #665c54;
+    border-radius: 6px;
+    color: #ebdbb2;
+    font-family: "MapleMonoNF CN";
+}
+
+tooltip label {
+    color: #ebdbb2;
+}

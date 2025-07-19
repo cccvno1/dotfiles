@@ -1,0 +1,87 @@
+# Gruvbox Dark theme for yazi
+
+[manager]
+cwd = { fg = "#d79921", bold = true }
+
+# Hovered
+hovered         = { fg = "#282828", bg = "#d79921" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "#fabd2f", italic = true }
+find_position = { fg = "#fe8019", bg = "reset", italic = true }
+
+# Marker
+marker_selected = { fg = "#b8bb26", bg = "#b8bb26" }
+marker_copied   = { fg = "#fabd2f", bg = "#fabd2f" }
+marker_cut      = { fg = "#fb4934", bg = "#fb4934" }
+
+# Tab
+tab_active   = { fg = "#282828", bg = "#d79921" }
+tab_inactive = { fg = "#a89984", bg = "#3c3836" }
+tab_width    = 1
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#665c54" }
+
+# Highlighting
+syntect_theme = "gruvbox-dark"
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#3c3836", bg = "#3c3836" }
+
+# Mode
+mode_normal = { fg = "#282828", bg = "#a89984", bold = true }
+mode_select = { fg = "#282828", bg = "#b8bb26", bold = true }
+mode_unset  = { fg = "#282828", bg = "#fb4934", bold = true }
+
+# Progress
+progress_label  = { bold = true }
+progress_normal = { fg = "#458588", bg = "#3c3836" }
+progress_error  = { fg = "#fb4934", bg = "#3c3836" }
+
+# Permissions
+permissions_t = { fg = "#b8bb26" }
+permissions_r = { fg = "#fabd2f" }
+permissions_w = { fg = "#fb4934" }
+permissions_x = { fg = "#8ec07c" }
+permissions_s = { fg = "#d3869b" }
+
+[select]
+border   = { fg = "#458588" }
+active   = { fg = "#fe8019" }
+inactive = { fg = "#a89984" }
+
+# Icons
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "#d3869b" },
+
+	# Videos
+	{ mime = "video/*", fg = "#fabd2f" },
+	{ mime = "audio/*", fg = "#fabd2f" },
+
+	# Archives
+	{ mime = "application/zip",             fg = "#fb4934" },
+	{ mime = "application/gzip",            fg = "#fb4934" },
+	{ mime = "application/x-tar",           fg = "#fb4934" },
+	{ mime = "application/x-bzip",          fg = "#fb4934" },
+	{ mime = "application/x-bzip2",         fg = "#fb4934" },
+	{ mime = "application/x-7z-compressed", fg = "#fb4934" },
+	{ mime = "application/x-rar",           fg = "#fb4934" },
+
+	# Documents
+	{ mime = "application/pdf", fg = "#fb4934" },
+
+	# Executables
+	{ mime = "application/x-executable", fg = "#b8bb26" },
+
+	# Fallback
+	{ name = "*", fg = "#ebdbb2" },
+	{ name = "*/", fg = "#83a598" }
+]

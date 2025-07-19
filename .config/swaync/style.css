@@ -1,0 +1,321 @@
+/* Gruvbox Dark theme for SwayNotificationCenter */
+
+* {
+  font-family: "MapleMonoNF CN";
+  font-weight: normal;
+}
+
+/* Notification window background */
+.floating-notifications.background .notification-row {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.floating-notifications.background .notification-row .notification-background {
+  background: rgba(40, 40, 40, 0.95);
+  border-radius: 8px;
+  margin: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 2px solid #504945;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification {
+  background: transparent;
+  margin: 0;
+  padding: 12px;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification.critical {
+  border: 2px solid #fb4934;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification.low {
+  border: 2px solid #665c54;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification.normal {
+  border: 2px solid #83a598;
+}
+
+/* Notification content */
+.notification-content {
+  color: #ebdbb2;
+  margin: 0;
+  padding: 0;
+}
+
+.notification-content .summary {
+  color: #d79921;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.notification-content .time {
+  color: #928374;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.notification-content .body {
+  color: #ebdbb2;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.notification-content .app-name {
+  color: #a89984;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Images */
+.notification-content .image {
+  margin-right: 12px;
+  border-radius: 6px;
+}
+
+/* Action buttons */
+.notification-action {
+  background: #458588;
+  color: #282828;
+  border: none;
+  border-radius: 4px;
+  margin: 4px 4px 0 0;
+  padding: 6px 12px;
+  font-weight: bold;
+}
+
+.notification-action:hover {
+  background: #83a598;
+}
+
+.notification-action:active {
+  background: #076678;
+}
+
+/* Close button */
+.close-button {
+  background: #fb4934;
+  color: #282828;
+  border: none;
+  border-radius: 50%;
+  margin: 4px;
+  padding: 4px;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.close-button:hover {
+  background: #cc241d;
+}
+
+/* Control Center */
+.control-center {
+  background: rgba(40, 40, 40, 0.95);
+  border-radius: 12px;
+  border: 2px solid #504945;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.control-center .widget-title {
+  background: #3c3836;
+  color: #d79921;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0;
+}
+
+.control-center .widget-title > button {
+  background: #689d6a;
+  color: #282828;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.control-center .widget-title > button:hover {
+  background: #8ec07c;
+}
+
+/* DND toggle */
+.control-center .widget-dnd {
+  background: #3c3836;
+  color: #ebdbb2;
+  padding: 12px;
+  border-bottom: 1px solid #504945;
+}
+
+.control-center .widget-dnd > switch {
+  background: #665c54;
+  border-radius: 12px;
+  border: none;
+}
+
+.control-center .widget-dnd > switch:checked {
+  background: #d79921;
+}
+
+.control-center .widget-dnd > switch slider {
+  background: #ebdbb2;
+  border-radius: 50%;
+  border: none;
+  margin: 2px;
+}
+
+/* Inhibitors */
+.control-center .widget-inhibitors {
+  background: #3c3836;
+  color: #ebdbb2;
+  padding: 12px;
+  border-bottom: 1px solid #504945;
+}
+
+.control-center .widget-inhibitors > button {
+  background: #fb4934;
+  color: #282828;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.control-center .widget-inhibitors > button:hover {
+  background: #cc241d;
+}
+
+/* Notification list in control center */
+.control-center-list {
+  background: transparent;
+  padding: 8px;
+}
+
+.control-center-list-placeholder {
+  color: #928374;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+}
+
+.notification-row {
+  margin: 4px 0;
+  padding: 0;
+  background: transparent;
+}
+
+.notification-row .notification-background {
+  background: #3c3836;
+  border-radius: 8px;
+  border: 1px solid #504945;
+  margin: 2px;
+  padding: 0;
+}
+
+.notification-row .notification-background:hover {
+  background: #504945;
+  border-color: #665c54;
+}
+
+.notification-row .notification-background .notification {
+  background: transparent;
+  color: #ebdbb2;
+  padding: 12px;
+  margin: 0;
+}
+
+.notification-row .notification-background .notification .notification-content .summary {
+  color: #d79921;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.notification-row .notification-background .notification .notification-content .body {
+  color: #ebdbb2;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.notification-row .notification-background .notification .notification-content .app-name {
+  color: #83a598;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.notification-row .notification-background .notification .notification-content .time {
+  color: #928374;
+  font-size: 11px;
+  margin-left: auto;
+}
+
+/* Blank window */
+.blank-window {
+  background: alpha(black, 0.1);
+}
+
+/* Scrollbar */
+scrollbar {
+  background: transparent;
+  border-radius: 8px;
+}
+
+scrollbar trough {
+  background: #3c3836;
+  border-radius: 8px;
+}
+
+scrollbar thumb {
+  background: #665c54;
+  border-radius: 8px;
+  border: 2px solid #3c3836;
+}
+
+scrollbar thumb:hover {
+  background: #928374;
+}
+
+/* Notification groups */
+.notification-group {
+  margin: 4px 0;
+}
+
+.notification-group-headers {
+  background: #458588;
+  color: #282828;
+  border-radius: 6px 6px 0 0;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
+.notification-group-headers .notification-group-icon {
+  color: #282828;
+  margin-right: 8px;
+}
+
+.notification-group-headers .notification-group-header {
+  color: #282828;
+  font-weight: bold;
+}
+
+.notification-group-headers button {
+  background: #83a598;
+  color: #282828;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 8px;
+}
+
+.notification-group-headers button:hover {
+  background: #689d6a;
+}
